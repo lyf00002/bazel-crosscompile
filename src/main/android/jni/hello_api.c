@@ -15,8 +15,8 @@ Java_org_example_hello_HelloApi_hello (JNIEnv * env, jclass klass)
    about implicit declaration of function 'static_assert', it means
    we're using the wrong search path. (Bazel's builtin android
    crosstools are broken in this way.) */
-#include <assert.h>
-       static_assert( 1 == 0, "static assert failed successfully - comment me out and recompile");
+//#include <assert.h>
+//       static_assert( 1 == 0, "static assert failed successfully - comment me out and recompile");
 
   int len = strlen(str);
   jchar *str1;
